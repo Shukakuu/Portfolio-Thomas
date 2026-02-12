@@ -57,6 +57,7 @@ export default function Background() {
                     <div className="tl-container">
                         <div
                             className="tl tl-scrollable"
+                            data-lenis-prevent-wheel
                             style={{
                                 maxHeight: "70vh",
                                 overflowY: "auto",
