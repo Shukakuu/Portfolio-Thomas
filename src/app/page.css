@@ -999,13 +999,27 @@ header .list-nav .active-nav-text {
 	position: relative;
 }
 
+/* inner wrapper inside scrollable .tl so the vertical line can span full content height */
+.tl-inner {
+	position: relative;
+}
+
+/* ensure container reserves space for the final dot */
+.tl {
+	/* a larger bottom padding guarantees the vertical line reaches the last dot */
+	padding-bottom: 48px;
+}
+
 /* Ligne verticale */
 .tl-line {
 	position: absolute;
-	left: 0;
-	top: 16px;
-	bottom: 0;
+	/* place the vertical line centered under the dots (items have 32px left padding) */
+	left: 16px;
+	top: 20px;
+	/* extend slightly beyond the container bottom so the line visibly reaches the last dot */
+	bottom: -8px;
 	border-left: 2px solid var(--hr-color-clair);
+	z-index: 0;
 }
 
 /* Élément */
@@ -1015,13 +1029,15 @@ header .list-nav .active-nav-text {
 	padding-bottom: 34px;
 }
 .tl-item:last-child {
-	padding-bottom: 0;
+	/* keep space for the dot inside the container so the vertical line lines up */
+	padding-bottom: 48px;
 }
 
 /* Point */
 .tl-dot {
 	position: absolute;
-	left: 1px;
+	/* center the dot on the vertical line */
+	left: 16px;
 	top: 12px;
 	width: 12px;
 	height: 12px;
@@ -1030,6 +1046,10 @@ header .list-nav .active-nav-text {
 	background: var(--tl-surface);
 	transform: translateX(-50%);
 	box-sizing: border-box;
+}
+
+.tl-dot {
+	z-index: 2;
 }
 
 /* Contenu */

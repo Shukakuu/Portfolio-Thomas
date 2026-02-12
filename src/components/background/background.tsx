@@ -31,15 +31,17 @@ const experiences = [
         description: "J'ai pu avoir l'occasion de travailler sur le site web de l'entreprise, en réalisant la page contact et un questionnaire intelligent en PHP et Javascript",
         technologies: ["Wordpress", "JavaScript", "PHP"],
     },
+
+        {
+        title: "Baccalauréat Professionnel Système Numérique Option C Réseau Informatique et Systèmes Communicants",
+        company: "Lycée Gutenberg",
+        period: "2022 - 2025",
+    },
+
     {
         title: "BTS CIEL",
         company: "Lycée UFA Heinrich Nessel",
         period: "2025 - 2026",
-    },
-    {
-        title: "Baccalauréat Professionnel Système Numérique Option C Réseau Informatique et Systèmes Communicants",
-        company: "Lycée Gutenberg",
-        period: "2022 - 2025",
     },
 ];
 
@@ -53,53 +55,59 @@ export default function Background() {
             <div className="mybackground">
                 <div className="left">
                     <div className="tl-container">
-                        <div 
+                        <div
                             className="tl tl-scrollable"
                             style={{
-                                maxHeight: '70vh',
-                                overflowY: 'auto',
-                                overflowX: 'hidden',
-                                paddingRight: '10px',
-                                position: 'relative',
+                                maxHeight: "70vh",
+                                overflowY: "auto",
+                                overflowX: "hidden",
+                                paddingRight: "10px",
+                                position: "relative",
                                 zIndex: 1,
                             }}
                         >
-                            {/* ligne verticale */}
-                            <div className="tl-line" />
-                            {experiences.map(({ company, description, period, technologies, title }, index) => (
-                                <div key={`${company}-${period}`} className="tl-item">
-                                    {/* point */}
-                                    <div className="tl-dot" />
-                                    {/* contenu */}
-                                    <div className="tl-content">
-                                        <div className="tl-head">
-                                            <div className="tl-head__avatar">
-                                                <Building2 className="tl-head__icon" aria-hidden="true" />
-                                            </div>
-                                            <span className="tl-company">{company}</span>
-                                        </div>
-                                        <div>
-                                            <h3 className="tl-title">{title}</h3>
-                                            <div className="tl-period">
-                                                <Calendar className="tl-period__icon" />
-                                                <span>{period}</span>
-                                            </div>
-                                        </div>
-                                        {technologies && (
-                                            <>
-                                                <p className="tl-desc">{description}</p>
-                                                <div className="tl-badges">
-                                                    {technologies.map((tech) => (
-                                                        <span key={tech} className="tl-badge">
-                                                            {tech}
-                                                        </span>
-                                                    ))}
+                            <div className="tl-inner">
+                                {/* ligne verticale */}
+                                <div className="tl-line" />
+
+                                {experiences.map(({ company, description, period, technologies, title }, index) => {
+                                    return (
+                                        <div key={`${company}-${period}`} className="tl-item">
+                                            {/* point */}
+                                            <div className="tl-dot" />
+                                            {/* contenu */}
+                                            <div className="tl-content">
+                                                <div className="tl-head">
+                                                    <div className="tl-head__avatar">
+                                                        <Building2 className="tl-head__icon" aria-hidden="true" />
+                                                    </div>
+                                                    <span className="tl-company">{company}</span>
                                                 </div>
-                                            </>
-                                        )}
-                                    </div>
-                                </div>
-                            ))}
+                                                <div>
+                                                    <h3 className="tl-title">{title}</h3>
+                                                    <div className="tl-period">
+                                                        <Calendar className="tl-period__icon" />
+                                                        <span>{period}</span>
+                                                    </div>
+                                                </div>
+                                                {technologies && (
+                                                    <>
+                                                        <p className="tl-desc">{description}</p>
+                                                        <div className="tl-badges">
+                                                            {technologies.map((tech) => (
+                                                                <span key={tech} className="tl-badge">
+                                                                    {tech}
+                                                                </span>
+                                                            ))}
+                                                        </div>
+                                                    </>
+                                                )}
+                                            </div>
+                                        </div>
+                                    );
+                                })}
+
+                            </div>
                         </div>
                     </div>
                 </div>
