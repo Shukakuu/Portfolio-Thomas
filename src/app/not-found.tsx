@@ -44,3 +44,6 @@ export default function Page() {
 		</div>
 	);
 }
+
+
+// TRAVAILELZ SUR CE TRUC LA G TJR PAS FAIT
