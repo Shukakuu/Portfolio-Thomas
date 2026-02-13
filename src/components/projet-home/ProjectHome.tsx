@@ -9,7 +9,7 @@ export default function ProjectHome() {
 		<div className="project-home-container" id="project-wrapper">
 			<StarMessage Icon={Sparkle} iconProps={{ className: "svg" }} text="Mes projets" />
 			<h1>Mes derniers projets</h1>
-			<p>Un aperçu des projets que j’ai réalisés au cours de ces dernières années.</p>
+			<p>Un aperçu des projets que j’ai réalisé au cours de ces dernières années.</p>
 
 			<div className="project-wrapper">
 				<div className="project">

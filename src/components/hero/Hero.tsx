@@ -85,8 +85,8 @@ export default function Hero() {
 
 					<div className="desc">
 						<p>
-							Actuellement en BTS CIEL, je me passionne pour l'informatique orienté réseaux et le développement. 
-							Je vous invite, à travers ce portfolio, à découvrir mes compétences et mes projets d'apprentissages.
+							Actuellement en BTS CIEL, je me passionne pour l'informatique orientée réseaux et le développement. 
+							Je vous invite, à travers ce portfolio, à découvrir mes compétences et mes projets d'apprentissage.
 						</p>
 					</div>
 				</div>

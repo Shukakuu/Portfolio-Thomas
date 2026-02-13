@@ -11,7 +11,7 @@ export default function Tools() {
 				Icon={Sparkle}
 				iconProps={{ className: "svg" }}
 				text="Outils / logiciels
-utilisé"
+utilisés"
 			/>
 			<div className="tools-wrapper">
 				<div className="left">
@@ -19,7 +19,7 @@ utilisé"
 						<h1>Mes outils / logiciels maitrisés</h1>
 						<p>
 							Toutes ces connaissances ont été acquises de différentes façons. Elles ont été acquises durant mes études en Bac Pro Système Numérique/BTS CIEL et d'autres par ma propre
-							initiative en essayant de mettre en place des solutions dans divers projets créer par mes soins.
+							initiative en essayant de mettre en place des solutions dans divers projets créés par mes soins.
 						</p>
 					</div>
 				</div>
