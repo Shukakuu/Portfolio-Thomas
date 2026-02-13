@@ -1,10 +1,12 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import StarMessage from "../star-message/StarMessage";
-import { Sparkle, Check } from "lucide-react";
+import { Sparkle } from "lucide-react";
 import Silk from "../Silk";
+import ContactModal from "./ContactModal";
 
 export default function Cta() {
+	const [open, setOpen] = useState(false);
 	return (
 		<div className="cta-container" id="contact-container">
 			<div className="cta">
@@ -20,11 +22,12 @@ export default function Cta() {
 						<h1>Une idée dont vous voudriez me parler?</h1>
 					</div>
 					<div className="center">
-						<button className="animated-button">
+						<button className="animated-button" onClick={() => setOpen(true)}>
 							<span>Me contacter</span>
 							<span></span>
 						</button>
 					</div>
+					{open && <ContactModal onClose={() => setOpen(false)} />}
 				</div>
 			</div>
 		</div>

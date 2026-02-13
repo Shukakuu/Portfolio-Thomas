@@ -7,7 +7,7 @@ import { flushSync } from "react-dom"
 import { cn } from "@/lib/utils"
 
 interface AnimatedThemeTogglerProps
-  extends React.ComponentPropsWithoutRef<"button"> {
+  extends React.HTMLAttributes<HTMLDivElement> {
   duration?: number
 }
 
@@ -17,7 +17,7 @@ export const AnimatedThemeToggler = ({
   ...props
 }: AnimatedThemeTogglerProps) => {
   const [isDark, setIsDark] = useState(false)
-  const buttonRef = useRef<HTMLButtonElement>(null)
+  const buttonRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const updateTheme = () => {
@@ -71,15 +71,25 @@ export const AnimatedThemeToggler = ({
     )
   }, [isDark, duration])
 
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault()
+      toggleTheme()
+    }
+  }
+
   return (
-    <button
+    <div
       ref={buttonRef}
-      onClick={toggleTheme}
+      role="button"
+      tabIndex={0}
+      onClick={() => toggleTheme()}
+      onKeyDown={handleKeyDown}
       className={cn(className)}
       {...props}
     >
       {isDark ? <Sun /> : <Moon />}
       <span className="sr-only">Toggle theme</span>
-    </button>
+    </div>
   )
 }
