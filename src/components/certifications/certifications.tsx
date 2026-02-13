@@ -30,7 +30,7 @@ const reviews = [
 	{
 		name: "Pass Ton Hack",
 		username: "@pentestOC",
-		body: "Formation aux bases du hacking réalisé par ©Airbus Defence et Space Cyber 2025. (Place 104/812).",
+		body: "Formation aux bases du hacking réalisée par ©Airbus Defence et Space Cyber 2025. (Place 104/812).",
 		Icon: FaUserSecret,
 	},
 	{
