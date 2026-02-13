@@ -33,7 +33,7 @@ export default function ProjectHome() {
 							<h2>Votre projet</h2>
 						</div>
 						<div className="text-container">
-							<p>Si vous avez confiance en mon travail, n'hésitez pas à me contacter pour discuter de votre projet !</p>
+							<p>Si mon travail vous plaît, n'hésitez pas à me contacter pour discuter de votre projet !</p>
 							<p></p>
 						</div>
 					</div>
