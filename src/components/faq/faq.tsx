@@ -12,7 +12,7 @@ const items = [
 		id: "1",
 		title: "Depuis quand est-ce que je développe ?",
 		content:
-			"J'ai eu l'occasion de découvrir le développement web en 2022 lors d'un de mes stages. J'ai donc continuer en autodidacte car ça me plaisait vraiment de créer des projets de A à Z à mon image.",
+			"J'ai eu l'occasion de découvrir le développement web en 2022 lors d'un de mes stages. J'ai donc continué en autodidacte car ça me plaisait vraiment de créer des projets de A à Z à mon image.",
 	},
 	{
 		id: "2",
@@ -30,7 +30,7 @@ const items = [
 		id: "4",
 		title: "Quels sont mes objectif pour 2026 ?",
 		content:
-			"Pour 2026 j'aimerais finir ce portfolio et trouver une alternances afin d'effectuer une réorientation vers un BTS SIO option SISR car c'est une filière plus concrète et me forger une expérience plus solide grâce à l'alternance.",
+			"Pour 2026 j'aimerais finir ce portfolio et trouver une alternance afin d'effectuer une réorientation vers un BTS SIO option SISR car c'est une filière plus concrète et me forger une expérience plus solide grâce à l'alternance.",
 	},
 ];
 
