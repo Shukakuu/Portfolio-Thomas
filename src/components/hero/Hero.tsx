@@ -1,11 +1,12 @@
 "use client";
 import { useEffect, useState } from "react";
-import LanguageCarousel from "../language/LanguageCarousel";
 import { File, Search, Settings, Github, ArrowUpRight } from "lucide-react";
 
 import { OrbitingCircles } from "@/components/ui/orbiting-circles";
 import { RainbowButton } from "@/components/ui/rainbow-button";
 import { TypingAnimation } from "@/components/ui/typing-animation";
+import LanguageCarousel from "../language/LanguageCarousel";
+
 
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
 import { BellIcon, CalendarIcon, FileTextIcon, GlobeIcon, InputIcon } from "@radix-ui/react-icons";
@@ -96,7 +97,7 @@ export default function Hero() {
 
 			<div className="bottom">
 				<hr />
-				<LanguageCarousel />
+										<LanguageCarousel />
 				<hr />
 			</div>
 		</div>
