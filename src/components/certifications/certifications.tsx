@@ -10,21 +10,15 @@ import { FaUserSecret } from "react-icons/fa";
 
 const reviews = [
 	{
-		name: "ANSSI",
-		username: "@secnum",
-		body: "Le MOOC officiel de l’ANSSI. (SecNumAcadémie)",
+		name: "En cours..",
+		username: "@?",
+		body: "En cours de passation",
 		Icon: Shield,
-	},
-	{
-		name: "CNIL",
-		username: "@atelierRGPD",
-		body: "Formation gratuite de la CNIL pour maîtriser le RGPD. (Atelier RGPD)",
-		Icon: Scale,
 	},
 	{
 		name: "Full-Stack Node.js",
 		username: "@nodejsFS",
-		body: "Formation dev Full-Stack Node.js Express et MongoDB. (OpenClassrooms)",
+		body: "Formation dev Full-Stack Node.js. (OpenClassrooms)",
 		Icon: SiExpress,
 	},
 	{

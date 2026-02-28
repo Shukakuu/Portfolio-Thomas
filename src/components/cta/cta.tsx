@@ -4,6 +4,9 @@ import StarMessage from "../star-message/StarMessage";
 import { Sparkle } from "lucide-react";
 import Silk from "../Silk";
 import ContactModal from "./ContactModal";
+import LanguageCarousel from "../language/LanguageCarousel";
+
+						<LanguageCarousel />
 
 export default function Cta() {
 	const [open, setOpen] = useState(false);
